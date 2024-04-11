@@ -1,7 +1,5 @@
-# node-modules
-my node modules 
 code-completer: Analyze Your Code and Find Missing Elements
-This Node.js module, code-completer, helps you identify missing closing braces (}), semicolons (;), and parentheses (()) in your JavaScript code. It analyzes the code structure using an Abstract Syntax Tree (AST) and reports any potential syntax errors caused by missing elements.
+[Markdown] This Node.js module, code-completer, helps you identify missing closing braces (}), semicolons (;), and parentheses (()) in your JavaScript code. It analyzes the code structure using an Abstract Syntax Tree (AST) and reports any potential syntax errors caused by missing elements.
 
 Installation:
 
@@ -11,7 +9,7 @@ Use code with caution.
 Usage:
 
 JavaScript
-'''js const analyzeCode = require('code-completer');
+const analyzeCode = require('code-completer');
 
 const code1 = `function add(a, b {
   return a + b;
@@ -29,7 +27,6 @@ const results3 = analyzeCode(code3);
 console.log(results1); // Output: { '}' : 1, ';' : 0, ')' : 0 }
 console.log(results2); // Output: { '}' : 0, ';' : 1, ')' : 0 }
 console.log(results3); // Output: { '}' : 0, ';' : 0, ')' : 1 }
-js'''
 Use code with caution.
 The analyzeCode function takes your code as a string and returns an object containing the number of missing occurrences of each element ({ '}' : count, ';' : count, ')' : count }).
 
